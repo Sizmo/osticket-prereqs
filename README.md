@@ -20,66 +20,69 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 - Setup Azure Tenant
 - Have an active subsctiption
-- Created an Azure Resource Group and Virtual Machine
+- Created an Azure Resource Group and Virtual Machine using Windows 10
 
 <h2>Installation Steps</h2>
 
+<p>1. Log in to your Azure Virtual Machine</p>
+<br />
+
+<p>
+2. Enable IIS with CGI.
+</p>
 <p>
 <img src="https://i.imgur.com/ql6QlGq.png" height="80%" width="80%" alt="enable iis with cgi"/>
 </p>
-<p>
-Enable IIS with CGI in the Windows VM.
-</p>
 <br />
 
+<p>
+3. Download and install PHP manager and Rewrite Module for IIS.
+</p>
 <p>
 <img src="https://i.imgur.com/okhEXOb.png" height="80%" width="40%" alt="install php manager"/>
 <img src="https://i.imgur.com/2L1iVLd.png" height="80%" width="40%" alt="install rewrite module"/>
 </p>
-<p>
-Download and install PHP manager for IIS and Rewrite Module.
-</p>
 <br />
 
+<p>
+4. Create a folder titled PHP in the C drive.
+</p>
 <p>
 <img src="https://i.imgur.com/CZUgDaq.png" height="80%" width="80%" alt="create php folder in c drive"/>
 </p>
-<p>
-Create a folder titled PHP in the C drive.
-</p>
 <br />
 
+<p>
+5. Download PHP 7.3.8 and extract all files to newly created PHP folder
+</p>
 <p>
 <img src="https://i.imgur.com/xSMHDyV.png" height="80%" width="80%" alt="extract files to PHP folder"/>
 </p>
-<p>
-Download PHP 7.3.8 and extract all files to newly created PHP folder
-</p>
 <br />
 
+<p>
+6. Download and install VC_redist.x86.exe
+</p>
 <p>
 <img src="https://i.imgur.com/28qmME6.png" height="80%" width="80%" alt="download and install vc_redist.x86"/>
 </p>
-<p>
-Download and install VC_redist.x86.exe
-</p>
 <br />
 
+<p>
+7. Download and install MySQL 5.5.62. Typical install. 
+</p>
 <p>
 <img src="https://i.imgur.com/ou1IGxT.png" height="80%" width="80%" alt="download and install mysql"/>
 <img src="https://i.imgur.com/6UNWi88.png" height="80%" width="80%" alt="download and install mysql"/>
 </p>
-<p>
-Download and install MySQL 5.5.62
-</p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/23ONuVT.png" height="80%" width="80%" alt="open iis as admin"/>
-<img src="https://i.imgur.com/9cVQvfI.png" height="80%" width="80%" alt="iis open"/>
+8. Open IIS as admin
 </p>
 <p>
-Open IIS as admin
+<img src="https://i.imgur.com/23ONuVT.png" height="80%" width="80%" alt="open iis as admin"/>
+<img src="https://i.imgur.com/9cVQvfI.png" height="80%" width="80%" alt="iis open"/>
 </p>
 <br />
 
