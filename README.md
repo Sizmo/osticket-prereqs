@@ -87,122 +87,131 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <br />
 
 <p>
+9. Register PHP in IIS with PHP Manager and restart server
+</p>
+<p>
 <img src="https://i.imgur.com/1oKsn0I.png" height="80%" width="80%" alt=""/>
 <img src="https://i.imgur.com/d6ih4gZ.png" height="80%" width="80%" alt=""/>
 </p>
-<p>
-Register PHP in IIS with PHP Manager and restart
-</p>
 <br />
 
+<p>
+10. Download OSTicket
+</p>
 <p>
 <img src="https://i.imgur.com/q1VepgN.png" height="80%" width="80%" alt=""/>
 </p>
+<br />
+
 <p>
-Download OSTicket
+11. Extract and copy “upload” folder to C:\inetpub\wwwroot
+</p>
+<br />
+<p>
+12. Rename “upload” to “osTicket” and restart IIS server
+</p>
+<p>
+<img src="https://i.imgur.com/s6QOKmV.png" height="80%" width="80%" alt=""/>
 </p>
 <br />
 
+<p>
+13. In IIS go to "Sites" -> "Default Web Site" -> "osTicket", then on the right, click “Browse *:80”
+</p>
 <p>
 <img src="https://i.imgur.com/Mn5o2I9.png" height="80%" width="80%" alt=""/>
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
 <img src="https://i.imgur.com/zBNdqDh.png" height="80%" width="80%" alt=""/>
 </p>
-<p>
+<br />
 
+<p>
+14. In IIS, "Sites" -> "Default Web Site" -> "osTicket" -> "PHP Manager" -> "Enable or disable an extension"
+  <br />
+  Enable the following: <br />
+    - php_imap.dll <br />
+    - php_intl.dll <br />
+    - php.opcache.dll <br />
+  Restart server.
+</p>
+<p>
+<img src="https://i.imgur.com/SGc5EGi.png" height="80%" width="80%" alt=""/>
+</p>
+<p>
+<img src="https://i.imgur.com/vMRx9Xv.png" height="80%" width="80%" alt=""/>
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+15. Go to "C:\inetpub\wwwroot\osTicket\include\" and rename "ost-sampleconfig.php" to "ost-config.php"
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
-<img src="" height="80%" width="80%" alt=""/>
-</p>
-<p>
-
+<img src="https://i.imgur.com/jsBAf5R.png" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/HIWhuT9.png" height="80%" width="80%" alt=""/>
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+16. Right click -> Properties -> Security -> Disable Inheritance -> Remove all -> New permissions -> Everyone -> All
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
-<img src="" height="80%" width="80%" alt=""/>
-</p>
-<p>
-
+<img src="blob:https://imgur.com/7ca02a25-b826-4b78-8d9d-044f2f9ddcdf" height="80%" width="80%" alt=""/>
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+17. Continue setup of osTicket in the browser and stop when you get to Databse Settings 
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
-<img src="" height="80%" width="80%" alt=""/>
-</p>
-<p>
-
+<img src="https://i.imgur.com/NmuiuMv.png" height="80%" width="80%" alt=""/>
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+18. Download and install HeidiSQL
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
-<img src="" height="80%" width="80%" alt=""/>
-</p>
-<p>
-
+<img src="https://i.imgur.com/OyFZ5yP.png" height="80%" width="80%" alt=""/>
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+19. Create a new session and connect
 </p>
 <p>
-
-</p>
-<br />
-
-<p>
-<img src="" height="80%" width="80%" alt=""/>
-</p>
-<p>
-
+<img src="https://i.imgur.com/XXlig72.png" height="80%" width="80%" alt=""/>
 </p>
 <br />
 
 <p>
-<img src="" height="80%" width="80%" alt=""/>
+20. Create a database called "osTicket"
 </p>
 <p>
+<img src="https://i.imgur.com/6ZeqwJX.png" height="80%" width="80%" alt=""/>
+</p>
+<br />
 
+<p>
+21. Delete "setup" folder in "C:\inetpub\wwwroot\osTicket" and set Permissions to “Read” only for "ost-config.php" file in "C:\inetpub\wwwroot\osTicket\include"
+</p>
+<p>
+<img src="https://i.imgur.com/opE84D4.png" height="80%" width="80%" alt=""/>
+</p>
+<br />
+
+<p>
+22. Browse to your help desk login page: http://localhost/osTicket/scp/login.php  <br/> End Users osTicket URL: http://localhost/osTicket/
+</p>
+<p>
+<img src="https://i.imgur.com/vf3SoDe.png" height="80%" width="80%" alt=""/>
+</p>
+<br />
+
+<p>
+22. Log in to osTicket using username and password created during setup
+</p>
+<p>
+<img src="https://i.imgur.com/Z2bhhxe.png" height="80%" width="80%" alt=""/>
 </p>
 <br />
