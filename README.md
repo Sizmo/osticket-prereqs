@@ -156,7 +156,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 16. Right click -> Properties -> Security -> Disable Inheritance -> Remove all -> New permissions -> Everyone -> All
 </p>
 <p>
-<img src="blob:https://imgur.com/7ca02a25-b826-4b78-8d9d-044f2f9ddcdf" height="80%" width="80%" alt=""/>
+<img src="https://i.imgur.com/dBioCxO.png" height="80%" width="80%" alt=""/>
 </p>
 <br />
 
